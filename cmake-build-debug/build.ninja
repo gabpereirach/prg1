@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users/gabri/OneDrive/Documents/HEIG/prg1/cmake-build-d
 
 build cmake_object_order_depends_target_prg1: phony || .
 
-build CMakeFiles/prg1.dir/01_-_Introduction/04-01_-erreur_de_compilation.cpp.obj: CXX_COMPILER__prg1_unscanned_Debug C$:/Users/gabri/OneDrive/Documents/HEIG/prg1/01$ -$ Introduction/04-01$ -erreur$ de$ compilation.cpp || cmake_object_order_depends_target_prg1
-  DEP_FILE = CMakeFiles\prg1.dir\01_-_Introduction\04-01_-erreur_de_compilation.cpp.obj.d
+build CMakeFiles/prg1.dir/01_Introduction/04_erreur_de_compilation.cpp.obj: CXX_COMPILER__prg1_unscanned_Debug C$:/Users/gabri/OneDrive/Documents/HEIG/prg1/01_Introduction/04_erreur_de_compilation.cpp || cmake_object_order_depends_target_prg1
+  DEP_FILE = CMakeFiles\prg1.dir\01_Introduction\04_erreur_de_compilation.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\prg1.dir
-  OBJECT_FILE_DIR = CMakeFiles\prg1.dir\01_-_Introduction
+  OBJECT_FILE_DIR = CMakeFiles\prg1.dir\01_Introduction
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/prg1.dir/01_-_Introduction/04-01_-erreur_de_compilation.cpp.obj
 #############################################
 # Link the executable prg1.exe
 
-build prg1.exe: CXX_EXECUTABLE_LINKER__prg1_Debug CMakeFiles/prg1.dir/01_-_Introduction/04-01_-erreur_de_compilation.cpp.obj
+build prg1.exe: CXX_EXECUTABLE_LINKER__prg1_Debug CMakeFiles/prg1.dir/01_Introduction/04_erreur_de_compilation.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\prg1.dir
