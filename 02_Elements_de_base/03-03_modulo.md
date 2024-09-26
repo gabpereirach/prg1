@@ -9,15 +9,15 @@ double x = 5, y = 11;
 
 Quel est le résultat d'évaluation des expressions suivantes ? en cas d'erreur, indiquez la raison.
 
-| # | Expréssion | Résultat |
-|---| ---------- |---|
-| 1 | `j % i` | |
-| 2 | `n % i`  | |
-| 3 | `y % x`  | |
-| 4 | `y % i` | |
-| 5 | `-j % i` | |
-| 6 | `n % ++i` | |
-| 7 | `n++ % ++i` | |
+| # | Expréssion | Résultat                             |
+|---| ---------- |--------------------------------------|
+| 1 | `j % i` | 1                                    |
+| 2 | `n % i`  | 0                                    |
+| 3 | `y % x`  | erreur % utilisable que pour des int |
+| 4 | `y % i` | erreur % utilisable que pour des int |
+| 5 | `-j % i` | -1                                   |
+| 6 | `n % ++i` | résultat=4 i=6                       |
+| 7 | `n++ % ++i` | résultat=4 i=6 n=11                  |
 
 
     

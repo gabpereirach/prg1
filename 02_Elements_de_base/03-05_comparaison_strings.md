@@ -16,12 +16,12 @@ Quel est le résultat d'évaluation des expressions suivantes ? Expliquez votre 
 Pour rappel, `' ' < '0' < '9' < 'A' < 'Z' < 'a' < 'z'`
 
 | # | Expréssion | Résultat (true/false) | Explication |
-|---| ---------- | --------------------- | ----------- |
-| 1 | `s1 < s2` | | |
-| 2 | `s1 > s3`  | | |
-| 3 | `s1 < s4`  | | |
-| 4 | `s3 > s5` | | |
-| 5 | `s1 > s6` | | |
+|---| ---------- |-----------------------|-------------|
+| 1 | `s1 < s2` | true                  | psk 1<2     |
+| 2 | `s1 > s3`  | true                  | psk r>d     |
+| 3 | `s1 < s4`  | false                 | psk 1>""    |
+| 4 | `s3 > s5` | true                  | psk l>g     |
+| 5 | `s1 > s6` | true                  | psk maj<min |
 
 
 
