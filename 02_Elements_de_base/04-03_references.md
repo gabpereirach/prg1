@@ -5,6 +5,7 @@ Coder en C++ les questions suivantes
 **NB** : les instructions sont dépendantes les unes des autres
 
 1) Créer une variable `var1` initialisée 1
+`int var1 = 1;`
 
 <details>
 <summary>Réponse</summary>
@@ -14,6 +15,7 @@ Coder en C++ les questions suivantes
 </details>
 
 2) Créer une référence `ref1` sur `var1`
+`int& ref1 = var1;`
 
 <details>
 <summary>Réponse</summary>
@@ -23,6 +25,7 @@ Coder en C++ les questions suivantes
 </details>
 
 3) Créer une référence `ref2` non initialisée
+pas possiblr une ref est toujours initialisé
 
 <details>
 <summary>Réponse</summary>
@@ -32,6 +35,7 @@ Pas possible, une référence est toujours initialisée
 </details>
 
 4) Passer la valeur de `var1` à 2
+`var1 = 2;`
 
 <details>
 <summary>Réponse</summary>
@@ -41,6 +45,7 @@ Pas possible, une référence est toujours initialisée
 </details>
 
 5) Passer la valeur de `ref1` à 3
+`ref1 = 3;`
 
 <details>
 <summary>Réponse</summary>
@@ -50,6 +55,7 @@ Pas possible, une référence est toujours initialisée
 </details>
 
 6) Afficher la valeur de `var1`
+`cout << var1;` // ça affichera 3
 
 <details>
 <summary>Réponse</summary>
@@ -59,6 +65,7 @@ Pas possible, une référence est toujours initialisée
 </details>
 
 7) Afficher la valeur de `ref1`
+`cout << ref1;`
 
 <details>
 <summary>Réponse</summary>
@@ -68,6 +75,7 @@ Pas possible, une référence est toujours initialisée
 </details>
 
 8) A quoi correspond la déclaration de `ref1`
+`int* const ref1 = var1;`
 
 <details>
 <summary>Réponse</summary>
@@ -77,6 +85,7 @@ Pas possible, une référence est toujours initialisée
 </details>
 
 9) A quoi correspond la déclaration d'une référence constante
+`const int* const refCste = var1;`
 
 <details>
 <summary>Réponse</summary>

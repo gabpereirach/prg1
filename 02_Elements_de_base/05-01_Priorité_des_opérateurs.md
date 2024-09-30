@@ -33,7 +33,7 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ---
 
 ~~~cpp 
-1 * 2 + 3 / 4 * 2
+((1 * 2) + ((3 / 4) * 2))
 ~~~
 
 <details>
@@ -48,7 +48,7 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 
 
 ~~~cpp 
-a + b < c * d + e or f - g + h == i
+(((a + b) < ((c * d) + e)) or (((f - g) + h) == i))
 ~~~
 
 <details>
@@ -62,7 +62,7 @@ a + b < c * d + e or f - g + h == i
 ---
 
 ~~~cpp 
-a == b < c
+(a == (b < c))
 ~~~
 
 <details>
@@ -77,7 +77,7 @@ a == b < c
 
 
 ~~~cpp 
-a < b or c == d and e > b
+((a < b) or ((c == d) and (e > b)))
 ~~~
 
 <details>
@@ -91,7 +91,7 @@ a < b or c == d and e > b
 ---
 
 ~~~cpp 
-++++a; 
+(++(++a)); 
 ~~~
 
 <details>
@@ -106,7 +106,7 @@ a < b or c == d and e > b
 
 
 ~~~cpp 
-+ a - - b * - c + - + d
+(((+ a) - ((- b) * (- c))) + (- (+ d)))
 ~~~
 
 <details>
@@ -121,14 +121,14 @@ a < b or c == d and e > b
 
 
 ~~~cpp 
-a * b % c + d % e / f - g
+((((a * b) % c) + (d % (e / f))) - g)
 ~~~
 
 <details>
 <summary>Solution</summary>
 
 ~~~cpp 
-((((a * b) % c) + ((d % e) / f)) - g)
+((((a * b) % c) + (d % (e / f))) - g)
 ~~~
 </details>
 
@@ -136,7 +136,7 @@ a * b % c + d % e / f - g
 
 
 ~~~cpp 
-+ a - b or c == d > e < f and g
+(((+ a) - b) or ((c == ((d > e) < f)) and g))
 ~~~
 
 <details>

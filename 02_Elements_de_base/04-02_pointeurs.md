@@ -4,7 +4,8 @@ Coder en C++ les questions suivantes.
 
 **NB** : les instructions sont dépendantes les unes des autres
 
-1) Créer une variable `var1` initialisée 1
+1) Créer une variable `var1` initialisée 1: 
+`int var1 = 1;`
 
 <details>
 <summary>Réponse</summary>
@@ -13,7 +14,8 @@ Coder en C++ les questions suivantes.
 
 </details>
 
-2) Créer une variable `var2` initialisée 2
+2) Créer une variable `var2` initialisée 2:
+`int var2 = 2;`
 
 <details>
 <summary>Réponse</summary>
@@ -22,7 +24,8 @@ Coder en C++ les questions suivantes.
 
 </details>
 
-3) Créer une constante `cste` initialisée 3
+3) Créer une constante `cste` initialisée 3: 
+`const int cste = 3;`
 
 <details>
 <summary>Réponse</summary>
@@ -32,6 +35,7 @@ Coder en C++ les questions suivantes.
 </details>
 
 4) Créer un pointeur non constant `ptr1` non initialisé
+`int* ptr1;`
 
 <details>
 <summary>Réponse</summary>
@@ -41,6 +45,7 @@ Coder en C++ les questions suivantes.
 </details>
 
 5) Créer un pointeur non constant `ptr2` pointant sur `var2`
+`int* ptr2 = &var2;`
 
 <details>
 <summary>Réponse</summary>
@@ -50,6 +55,7 @@ Coder en C++ les questions suivantes.
 </details>
 
 6) Faire pointer `ptr1` sur `var1`
+`ptr1 = &var1;`
 
 <details>
 <summary>Réponse</summary>
@@ -59,6 +65,7 @@ Coder en C++ les questions suivantes.
 </details>
 
 7) Modifier la valeur pointée par `ptr1` à 2
+`*ptr1 = 2;`
 
 <details>
 <summary>Réponse</summary>
@@ -68,7 +75,7 @@ Coder en C++ les questions suivantes.
 </details>
 
 8) Afficher "oui" ou "non" selon si `ptr1` et `ptr2` pointent sur la même variable.</br>Ne pas utiliser de `if`
-
+`cout << (ptr1 == ptr2 ? "oui" : "non");`
 <details>
 <summary>Réponse</summary>
 
@@ -77,6 +84,7 @@ Coder en C++ les questions suivantes.
 </details>
 
 9) Afficher "oui" ou "non" selon si `ptr1` et `ptr2` pointent sur une valeur identique.</br>Ne pas utiliser de `if`
+`cout << (*ptr1 == *ptr2 ? "oui" : "non");`
 
 <details>
 <summary>Réponse</summary>
@@ -86,6 +94,7 @@ Coder en C++ les questions suivantes.
 </details>
 
 10) Afficher l'addresse où se trouve `var1`
+`cout << &var1;`
 
 <details>
 <summary>Réponse</summary>
@@ -96,6 +105,8 @@ Coder en C++ les questions suivantes.
 
 11) Afficher le contenu de `ptr1`</br>
 Que peut-on dire de cette valeur ?
+`cout << ptr1;`
+même valeur que `var1` 
 
 <details>
 <summary>Réponse</summary>
@@ -107,6 +118,7 @@ Que peut-on dire de cette valeur ?
 </details>
 
 12) Afficher l'addresse où se trouve `ptr1`
+`cout << &ptr1;`
 
 <details>
 <summary>Réponse</summary>
@@ -116,6 +128,7 @@ Que peut-on dire de cette valeur ?
 </details>
 
 13) Faire pointer `ptr1` sur `cste`
+Pas possible comme `ptr1` c est un int
 
 <details>
 <summary>Réponse</summary>
@@ -127,6 +140,7 @@ Pas possible, un `int*` (avec droit RW) ne peut pas pointer sur une constante
 </details>
 
 14) Déclarer un pointer non constant `ptr3` sur `cste`
+`const int* ptr3 = &cste;`
 
 <details>
 <summary>Réponse</summary>
