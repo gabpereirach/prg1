@@ -1,7 +1,0 @@
-# ninja log v6
-3	276	7487766103226206	build.ninja	431502dd9b5c7e45
-16	351	7485385064946853	CMakeFiles/prg1.dir/01_-_Introduction/04-01_-erreur_de_compilation.cpp.obj	3f0d37ae1ee43e42
-352	447	7485385068371127	prg1.exe	825d5c62e959ea8c
-3	639	7487766103226206	build.ninja	431502dd9b5c7e45
-18	876	7487766104655659	CMakeFiles/prg1.dir/01_Introduction/04_erreur_de_compilation.cpp.obj	3d20c9624c5ce781
-876	1229	7487766113238470	prg1.exe	7a45ed8cfe6bb611

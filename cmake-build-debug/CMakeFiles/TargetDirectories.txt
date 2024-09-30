@@ -1,3 +1,0 @@
-C:/Users/gabri/OneDrive/Documents/HEIG/prg1/cmake-build-debug/CMakeFiles/prg1.dir
-C:/Users/gabri/OneDrive/Documents/HEIG/prg1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/gabri/OneDrive/Documents/HEIG/prg1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
