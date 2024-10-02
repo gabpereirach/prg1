@@ -14,10 +14,31 @@ Complétez le programme qui suit pour qu'il détermine et affiche le tarif de li
 using namespace std;
 
 int main() {
-   cout << "Livraison en Suisse ? (O/N) ";
-   char reponse1; cin >> reponse1;
+    const double frais_suisse_sauf_exception =  5.00;
+    const double frais_tessin_grison         =  7.00;
+    const double frais_liechtenstein         =  7.00;
+    const double frais_international         = 10.00;
+    
+    double frais;
+    
+    cout << "Livraison en Suisse ? (O/N) ";
+    char reponse1; cin >> reponse1;
    
-   // votre code vient ici
+    if (reponse1 == "O"){
+        cout << "Livraison dans les cantons du Tessin ou Grison ? (O/N) ";
+        char reponse2; cin >> reponse2;
+        
+        frais = (reponse2 == "0") ? frais_tessin_grison : frais_suisse_sauf_exception;
+        
+        cout << "La livraison coûtera " << frais << " francs." << endl;
+    }else{
+        cout << "Livraison au Liechtenstein ? (O/N) ";
+        char reponse2; cin >> reponse2;
+        
+        frais = (reponse2 == "0") ? frais_liechtenstein : frais_international;
+
+        cout << "La livraison coûtera " << frais << " euros." << endl;
+    }
 }
 ~~~
 

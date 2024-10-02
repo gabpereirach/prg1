@@ -7,14 +7,26 @@ Compléter le programme C++ ci-dessous pour qu'il affiche combien le mois choisi
 using namespace std;
 
 int main() {
-   cout << "Entrez un no de mois (1-12) : ";
-   int no_mois; cin >> no_mois;
-   
-   cout << "Ce mois comporte ";
-   
-   // votre code vient ici
-   
-   cout << " jours." << endl;
+    cout << "Entrez un no de mois (1-12) : ";
+    int no_mois; cin >> no_mois;
+    
+    cout << "Le mois de " << endl;
+    switch (no_mois){
+        case 1: cout << "janvier comporte 31" << endl; break;
+        case 2: cout << "février comporte 28 ou 29" << endl; break;
+        case 3: cout << "mars comporte 31" << endl; break;
+        case 4: cout << "avril comporte 30" << endl; break;
+        case 5: cout << "mai comporte 31" << endl; break;
+        case 6: cout << "juin comporte 30" << endl; break;
+        case 7: cout << "juillet comporte 31" << endl; break;
+        case 8: cout << "août comporte 31" << endl; break;
+        case 9: cout << "septembre comporte 30" << endl; break;
+        case 10: cout << "octobre comporte 31" << endl; break;
+        case 11: cout << "novembre comporte 30" << endl; break;
+        case 12: cout << "décembre comporte 31" << endl; break;
+    }
+     
+    cout << " jours." << endl;
 }
 ~~~
 
@@ -53,7 +65,7 @@ switch (no_mois) {
    case 2: cout << "28 ou 29"; break;
    case 4: [[fallthrough]];
    case 6: [[fallthrough]];
-   case 9: [[fallthrough]];
+   case 9: [[fallthrough]]; // c'est pour dire de passer directement cette valeur jusqu'en bas
    case 11: cout << "30"; break;
    default: cout << "31"; break;
 }

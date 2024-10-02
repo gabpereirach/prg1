@@ -9,6 +9,7 @@ if (i < 1) {
    b = i > 2;
 }
 ~~~
+`b = (i<2) or (i>2);`
 
 <details>
 <summary>Solution</summary>
@@ -29,6 +30,7 @@ if (j == 0) {
    }
 }
 ~~~
+`b = (j == 0) or !(i/j < k);`
 
 <details>
 <summary>Solution</summary>
@@ -51,6 +53,7 @@ if (j == 0) {
    }
 }
 ~~~
+`b = !(j == 0) or (i/j < k);`
 
 <details>
 <summary>Solution</summary>

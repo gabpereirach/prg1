@@ -9,6 +9,7 @@ if (a > 0) {
    b -= 2*a; 
 }
 ~~~
+`b += a > 0 ? a : -2*a;`
 
 <details>
 <summary>Solution</summary>
@@ -28,6 +29,7 @@ if (d == 0.) {
    r = n/d; 
 }
 ~~~
+`r = d == 0. ? 1e100 : n/d;`
 
 <details>
 <summary>Solution</summary>
@@ -51,6 +53,7 @@ if (a > 0) {
    b *= 2;
 }
 ~~~
+`b = a > 0 ? b + 1 : ( a == 0 ? b = 0 : b * 2);`
 
 <details>
 <summary>Solution</summary>

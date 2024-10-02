@@ -13,6 +13,14 @@ if (a == 1) {
    cout << "BA";
 }        
 ~~~
+~~~cpp 
+switch (a) {
+    case 1 : cout << "A"; break;
+    case 2 : cout << "E"; break;
+    case 4 : cout << "C"; break;
+    default : cout << "BA";
+}        
+~~~
 
 <details>
 <summary>Solution</summary>
@@ -36,6 +44,16 @@ if (a < 0 or a >= 5) {
 } else {
    cout << "B";
 }  
+~~~
+~~~cpp 
+switch (a) {
+    case 0:
+    case 1:
+    case 2 : cout << "A"; break;
+    case 3 :
+    case 4 : cout << "B"; break;
+    default : cout << "D"; break;
+}   
 ~~~
 
 <details>

@@ -17,6 +17,7 @@ if (prixActuel < 100) {
    nouveauPrix = prixActuel - 20;
 }
 ~~~
+nn si y a une égalité -> prixActuel == 100
 
 <details>
 <summary>Solution</summary>

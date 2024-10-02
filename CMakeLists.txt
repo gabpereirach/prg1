@@ -3,4 +3,5 @@ project(prg1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(prg1 "01_Introduction/04_erreur_de_compilation.cpp")
+add_executable(prg1 "01_Introduction/04_erreur_de_compilation.cpp"
+        03_Structures_de_controle/01-10_Note_ECTS.cpp)
