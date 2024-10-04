@@ -3,10 +3,17 @@
 Attention, dans les exercices qui suivent, votre code doit être valide quelque soit la valeur de `n` et les variables doivent avoir la même portée (scope) que dans le code original.
 
 1. Réécrire la boucle suivante avec une boucle `while`
-  
+
 ~~~cpp 
 for (int i = 0; i < n; ++i) {
    cout << i << endl;
+}
+~~~
+~~~cpp 
+int i = 0
+while( i < n) {
+   cout << i << endl;
+   ++i
 }
 ~~~
 
@@ -29,6 +36,14 @@ for (int i = 0; i < n; ++i) {
 ~~~cpp 
 for (int i = 0; i < n; ++i) {
    cout << i << endl;
+}
+~~~
+~~~cpp 
+if(int i = 0, i < n){
+    do{
+       cout << i << endl;
+       ++i
+    }while (i < n) 
 }
 ~~~
 
@@ -69,6 +84,12 @@ while (i-- > n) {
    cout << i << endl;
 }
 ~~~
+~~~cpp 
+int i = 0;
+for (; i-- > n;) {
+   cout << i << endl;
+}
+~~~
 
 <details>
 <summary>Solution</summary>
@@ -87,6 +108,14 @@ for (; i-- > n;) {
 int i = 0; 
 while (i-- > n) {
    cout << i << endl;
+}
+~~~
+~~~cpp 
+int i = 0; 
+if(i-- > n){
+    do{
+       cout << i << endl;
+    } while (i-- > n);
 }
 ~~~
 
@@ -114,6 +143,13 @@ do {
   ++i; 
 } while (i < n);   
 ~~~
+~~~cpp 
+int i = 0; 
+cout << i << endl;
+for (++i; i < n;++i){
+  cout << i << endl;
+}   
+~~~
 
 <details>
 <summary>Solution</summary>
@@ -135,6 +171,13 @@ do {
   cout << i << endl;
   ++i; 
 } while (i < n);   
+~~~
+~~~cpp 
+int i = 0; 
+cout << i << endl;
+while (++i < n){
+    cout << i << endl;
+}  
 ~~~
 
 <details>

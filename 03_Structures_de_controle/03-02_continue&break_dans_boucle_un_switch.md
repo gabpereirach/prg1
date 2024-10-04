@@ -23,6 +23,7 @@ int main() {
    }
 }
 ~~~
+12N 2N 34 4 DN
 
 Conseil : essayer de trouver la réponse "à la main", puis vérifier votre réponse en l'exécutant pas à pas dans un debugger.
 
