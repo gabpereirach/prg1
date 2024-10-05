@@ -7,6 +7,12 @@ Dans quel ordre devrait se passer un développement
 - compilation
 - éxecution
 
+1. analyse
+2. écriture de code
+3. compilation
+4. édition de lien 
+5. execution
+
 
 <details>
 <summary>Solution</summary>

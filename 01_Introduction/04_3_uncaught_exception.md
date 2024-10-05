@@ -16,6 +16,7 @@ int main() {
    cout << "hello" << endl;
 }
 ~~~
+le programme s'arrete quand i vaud 3
 
 <details>
 <summary>Solution</summary>
