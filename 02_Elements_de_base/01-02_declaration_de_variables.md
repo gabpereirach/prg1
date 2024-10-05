@@ -10,6 +10,7 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     n = 1 – 2 * n;
     n = n + 1;
    ~~~
+   n=0
 
 2.  
     ~~~cpp
@@ -17,29 +18,34 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     n = n + 1;
     int n = 1 – 2 * n;
     ~~~
+Non ce n'est pas correcte. La variable `n` est déclarée deux fois.
 3. 
     ~~~cpp
     int n = 1, p = 2;
     n = (n + 1) * (n - k);
     ~~~
+   k n'est pas défini
 4. 
     ~~~cpp
     int n, m = 0;
     n = 2 * n - 1;
     m = n + 1;
     ~~~
+   n n'a pas de valeur
  5. 
     ~~~cpp
     int n = 5, m = 0;
     const int nb_produit = 10;
     m = n * nb_produit - 1;    
     ~~~
+    m=49
  6. 
     ~~~cpp
     int n = 5, m = 0;
     const int nb_produit = 10;
     m = n * nb_produit--;    
     ~~~
+    cont fait qu'il n y a pas de droit d'écriture
 
 <details>
 <summary>Solution</summary>

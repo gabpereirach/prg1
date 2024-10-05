@@ -1,23 +1,23 @@
 # Identificateurs (noms des variables) en c++
 Pour chacun des cas ci-dessous, indiquez s'il s'agit d'un identificateur C++ légal ou non. Justifiez votre réponse si celle-ci est "Non"
 
-|  #  | Identificateur | Oui / Non | Explication | 
-| --- | -------------- | --------- | ----------- |
-| 1 | `007` | | |
-| 2 | `james_bond_007`  | | |
-| 3 | `james_bond__007`  | | |
-| 4 | `james bond` | | |
-| 5 | `sOs` | | |
-| 6 | `SOS` | | |
-| 7 | `_007` | | |
-| 8 | `__007` | | |
-| 9 | `_007_` | | |
-| 10 | `bond-007` | | |
-| 11 | `tom&jerry` | | |
-| 12 | `int` | | |
-| 13 | `INT` | | |
-| 14 | `André` | | |
-| 15 | `_` | | |
+|  #  | Identificateur | Oui / Non | Explication        | 
+| --- | -------------- |-----------|--------------------|
+| 1 | `007` | nn        | start with chiffre |
+| 2 | `james_bond_007`  | oui       |                    |
+| 3 | `james_bond__007`  | oui       |                    |
+| 4 | `james bond` | nn        | car espace         |
+| 5 | `sOs` | oui       |                    |
+| 6 | `SOS` | oui       |                    |
+| 7 | `_007` | oui       |                    |
+| 8 | `__007` | oui       |                    |
+| 9 | `_007_` | oui       |                    |
+| 10 | `bond-007` | nn        | caracter special   |
+| 11 | `tom&jerry` | nn        | caractere special  |
+| 12 | `int` | nn        | mot reservé        |
+| 13 | `INT` | oui       | a eviter ttfois    |
+| 14 | `André` | nn        | y a un accent      |
+| 15 | `_` | oui       |                    |
 
 
 
