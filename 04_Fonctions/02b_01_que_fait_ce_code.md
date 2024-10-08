@@ -22,6 +22,7 @@ void mystere(int& a, int& b) {
 }
 
 ~~~
+x = 4 y = 3
 
 <details>
 <summary>Solution</summary>

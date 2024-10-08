@@ -30,6 +30,18 @@ int main() {
    return EXIT_SUCCESS;
 }
 ~~~
+x1 = 39
+x2 = 400
+x3 = 92
+x4 = 62
+x5 = 0
+
+
+
+
+
+
+
 
 <details>
 <summary>Solution</summary>
