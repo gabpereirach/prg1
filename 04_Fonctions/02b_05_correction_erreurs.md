@@ -48,9 +48,6 @@ Le programme ci-dessous contient plusieurs erreurs.
 ~~~
 18 probleme type
 19 probleme type
-21
-22
-23
 39 y a un const
 
 <details>

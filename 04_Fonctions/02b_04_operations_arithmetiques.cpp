@@ -7,7 +7,6 @@
 using namespace std;
 
 bool operation(double operandeGauche, double operandeDroite, char operateur, double& resultat) {
-
     switch (operateur) {
         case '+': resultat = operandeGauche + operandeDroite; break;
         case '-': resultat = operandeGauche - operandeDroite; break;
@@ -21,11 +20,8 @@ bool operation(double operandeGauche, double operandeDroite, char operateur, dou
 void test(double operandeGauche, double operandeDroite, char operateur) {
     double resultat;
     if (operation(operandeGauche, operandeDroite, operateur, resultat)) {
-        cout << operandeGauche << " " << operateur << " "
-             << operandeDroite << " = " << resultat << endl;
-    }
-
-    else {
+        cout << operandeGauche << " " << operateur << " " << operandeDroite << " = " << resultat << endl;
+    }else {
         cout << "L'operation " << "'" << operateur << "'" << " est illicite" << endl;
     }
 }
