@@ -12,7 +12,22 @@ cout << min(a, b, c);
 min(a, b, c) = 1;
 int& d = min(a, b, c);
 ~~~
+Ce que j aurai fait de base en mode speed
+~~~cpp
+int min(int& a, int& b, int& c){
+    return a < b ? (a < c ? a : c) : (b < c ? b : c);
+}
+~~~
+après avoir vu l'autre
+~~~cpp
+int& min(int& a, int& b){
+    return a < b ? a : b;
+}
 
+int& min(int& a, int& b, int& c){
+    return min(min(a,b),c);
+}
+~~~
 **NB** ne pas utiliser de `if`
 
 <details>
