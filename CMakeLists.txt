@@ -3,5 +3,5 @@ project(prg1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(prg1 "05_Flux/01_02_lecture_et_ajout_dans_un_fichier.cpp"
-        05_Flux/01_02_lecture_et_ajout_dans_un_fichier.cpp)
+add_executable(prg1 "04_Fonctions/07_02_compteur.cpp"
+        04_Fonctions/07_02_compteur.cpp)

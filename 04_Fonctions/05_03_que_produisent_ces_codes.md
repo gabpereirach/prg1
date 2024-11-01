@@ -107,7 +107,7 @@ void f5(int n) {
 
 f5(4);
 ~~~
-
+1 2 1 3 1 2 4
 <details>
 <summary>Solution</summary>
 
@@ -129,7 +129,7 @@ int f6(int a, int b) {
 
 f6(8, 5);
 ~~~
-
+(8, 5)(5,3)(3,2)(2,1)(1,0)
 <details>
 <summary>Solution</summary>
 
