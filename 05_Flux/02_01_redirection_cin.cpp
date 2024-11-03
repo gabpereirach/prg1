@@ -69,6 +69,7 @@ bool read(const std::string& file_name){
     }
 
     file_in.close();
+
     return true;
 }
 
