@@ -2,7 +2,7 @@
 
 Ajouter toutes les parenthèses aux expressions suivantes pour exprimer
 explicitement l'ordre d'évaluation de l'expression qui existe implicitement
-en vertu de l'ordre de priorité des opérateurs. 
+en vertu de l'ordre de priorité des opérateurs.
 
 Par exemple, l'expression
 
@@ -10,7 +10,7 @@ Par exemple, l'expression
 a + b * c; 
 ~~~
 
-doit être ré-écrite 
+doit être ré-écrite
 
 ~~~cpp
 (a + (b * c)); 
@@ -28,7 +28,8 @@ doit être ré-écrite
 ((a / b) * c); 
 ~~~
 
-Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droite. Vous pouvez vous aider de la page [C++ Operator Precedence](https://en.cppreference.com/w/cpp/language/operator_precedence) de cppreference.com
+Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droite. Vous pouvez vous aider de la
+page [C++ Operator Precedence](https://en.cppreference.com/w/cpp/language/operator_precedence) de cppreference.com
 
 ---
 
@@ -42,11 +43,11 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp 
 ((1 * 2) + ((3 / 4) * 2))
 ~~~
+
 </details>
 
 ---
 
-
 ~~~cpp 
 (((a + b) < ((c * d) + e)) or (((f - g) + h) == i))
 ~~~
@@ -57,6 +58,7 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp 
 (((a + b) < ((c * d) + e)) or (((f - g) + h) == i))
 ~~~
+
 </details>
 
 ---
@@ -71,10 +73,10 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp 
 (a == (b < c))
 ~~~
+
 </details>
 
 ---
-
 
 ~~~cpp 
 ((a < b) or ((c == d) and (e > b)))
@@ -86,6 +88,7 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp 
 ((a < b) or ((c == d) and (e > b)))
 ~~~
+
 </details>
 
 ---
@@ -100,10 +103,10 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp
 (++(++a)) 
 ~~~
+
 </details>
 
 ---
-
 
 ~~~cpp 
 (((+ a) - ((- b) * (- c))) + (- (+ d)))
@@ -115,10 +118,10 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp 
 (((+a) - ((-b) * (-c))) + (-(+d)))
 ~~~
+
 </details>
 
 ---
-
 
 ~~~cpp 
 ((((a * b) % c) + (d % (e / f))) - g)
@@ -130,10 +133,10 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp 
 ((((a * b) % c) + (d % (e / f))) - g)
 ~~~
+
 </details>
 
 ---
-
 
 ~~~cpp 
 (((+ a) - b) or ((c == ((d > e) < f)) and g))
@@ -145,6 +148,7 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 ~~~cpp 
 (((+ a) - b) or ((c == ((d > e) < f)) and g))
 ~~~
+
 </details>
 
 ---

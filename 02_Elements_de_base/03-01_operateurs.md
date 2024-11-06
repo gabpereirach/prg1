@@ -2,7 +2,6 @@
 
 Que va afficher le programme C++ suivant ?
 
-
 ~~~cpp
 int i, j, k;
 
@@ -30,7 +29,6 @@ D : i = 9 j = 3 k = 9
 
 ~~~
 
-
 <details>
 <summary>Solution</summary>
 
@@ -38,6 +36,5 @@ D : i = 9 j = 3 k = 9
 - B : i = 2 k = 2
 - C : i = 3 j = 4 k = 8
 - D : i = 9 j = 3 k = 9
-
 
 </details>

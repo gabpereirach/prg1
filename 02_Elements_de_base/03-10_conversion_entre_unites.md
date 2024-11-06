@@ -1,13 +1,15 @@
 # Conversion de mètres en miles, pieds et pouces
 
 Ecrire un programme C++ permettant de réaliser les trois conversions d'unités suivantes :
+
 - mètres en miles
 - mètres en pieds (feet en anglais)
 - mètres en pouces (inches en anglais).
-  
+
 Le nombre de mètres est saisi par l'utilisateur sous la forme d'un entier > 0. On suppose ladite saisie correcte.
 
 Un exemple d'exécution :
+
 ~~~
 Entrez le nombre de metres a convertir (entier > 0) : 1000
 1000 [m]
@@ -15,8 +17,6 @@ Entrez le nombre de metres a convertir (entier > 0) : 1000
 = 3280.84 [ft]
 = 39370.1 [inch]
 ~~~
-
-
 
 <details>
 <summary>Solution</summary>
@@ -45,9 +45,5 @@ int main() {
     return EXIT_SUCCESS;
 }
 ~~~
-   
-   
-
-
 
 </details>

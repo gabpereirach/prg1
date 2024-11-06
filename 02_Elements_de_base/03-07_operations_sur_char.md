@@ -22,20 +22,12 @@ cout << "4. " << z << endl;
 4. q psk 65(A) + 48(0) = 113(q)
 ~~~
 
-
-
-
-    
-
 <details>
 <summary>Solution</summary>
 
-1. E   
+1. E
 2. F
 3. A
 4. q
-   
-
-
 
 </details>

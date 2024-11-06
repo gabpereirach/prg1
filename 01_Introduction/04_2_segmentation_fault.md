@@ -13,6 +13,9 @@ int main() {
    cout << "hello" << endl;
 }
 ~~~
+~~~
+Process finished with exit code -1073741819 (0xC0000005)
+~~~
 
 <details>
 <summary>Solution</summary>

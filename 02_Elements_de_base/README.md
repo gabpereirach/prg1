@@ -1,7 +1,7 @@
 # Chapitre 2 - Elements de base
 
- Ce chapitre est composé de 6 sections
- 
+Ce chapitre est composé de 6 sections
+
 1. Variables
 2. Types de base
 3. Opérations

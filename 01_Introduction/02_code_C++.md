@@ -13,6 +13,14 @@ int main()                                  // 3
     return EXIT_SUCCESS;                    // 6
 }                                           // 4
 ~~~
+1. c'est pour importer les différentes librairy:
+   - iostream : pour use cout, cin et end 
+   - cstdlib : EXIT_SUCESS
+2. c'est pour eviter de devoir écrire std::cout
+3. par defaut la première fonction pointer est main et c'est celui utiliser pour tt ce programme
+4. {} c'est le corps de la fonction main
+5. cout affiche du contenu dans le terminal
+6. return c'ets ce qui va être retourné à la fonction main et là c'est une fonction sans probleme
 
 <details>
 <summary>Solution</summary>
