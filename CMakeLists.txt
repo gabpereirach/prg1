@@ -3,5 +3,5 @@ project(prg1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(prg1 "04_Fonctions/05_02_Fibonacci.cpp"
-        04_Fonctions/05_02_Fibonacci.cpp)
+add_executable(prg1 "05_Flux/04_01_controle_de_saisie_infos_etudiants.cpp"
+        05_Flux/04_01_controle_de_saisie_infos_etudiants.cpp)

@@ -16,22 +16,22 @@ L’utilisateur saisi dans l’ordre les informations suivantes lorsque le progr
 
 
 
-| Instruction 	                                       |  Buffer           | Commentaire                              |
-|-------------------------------------------------------|-------------------|------------------------------------------|
-|`cout << "entrer des valeurs : ";`                     |                   |                                          |
-|`while(cin.get() != '\n');`                            |                   |                                          |
-|`cout << endl;`                                        |                   |                                          |
-|`cin  >> a;`                                           |                   |                                          |
-|`cin  >> b;`                                           |                   |                                          |
-|`cin.ignore(numeric_limits<streamsize>::max(), '\n');` |                   |                                          |
-|`cin  >> x;`                                           |                   |                                          |
-|`cin  >> y;`                                           |                   |                                          |
-|`cout << "voulez-vous sauver [o/n] : ";`               |                   |                                          |
-|`cin  >> c;`                                           |                   |                                          |
-|`cout << "sauver : " << c << endl;`                    |                   |                                          |
-|`cin  >> a;`                                           |                   |                                          |
-|`cin  >> b;`                                           |                   |                                          |
-|`cin  >> x;`                                           |                   |                                          |
+| Instruction 	                                       | Buffer            | Commentaire                                                     |
+|-------------------------------------------------------|-------------------|-----------------------------------------------------------------|
+|`cout << "entrer des valeurs : ";`                     | ∅                 | Le buffer est initialisé à ∅                                    |
+|`while(cin.get() != '\n');`                            | ∅                 | 45 23 21.2 sont perdu                                           |
+|`cout << endl;`                                        | ∅                 | Ne modifie pas le buffer d'entrée                               |
+|`cin  >> a;`                                           | `_1_94_3.94_123↩` | `4_1_94_3.94_123↩` 4=>a psk il prend pas plus loin que l espace |
+|`cin  >> b;`                                           | `_94_3.94_123↩`   | `_1_94_3.94_123↩` 1=>b                                          |
+|`cin.ignore(numeric_limits<streamsize>::max(), '\n');` | ∅                 | Le buffer est reset et donc initialisé à ∅                      |
+|`cin  >> x;`                                           | `_3.45n↩`         | `7_3.45n↩` 7=>x                                                 |
+|`cin  >> y;`                                           | `n↩`              | `_3.45n↩` 3.45=>y                                               |
+|`cout << "voulez-vous sauver [o/n] : ";`               | `n↩`              | Ne modifie pas le buffer d entrée                               |
+|`cin  >> c;`                                           | `↩`               | `n↩` 'n'=>c                                                     |
+|`cout << "sauver : " << c << endl;`                    | `↩`               | ne modifie pas le buffer d'entrée                               |
+|`cin  >> a;`                                           | `a1↩`             | `43a1↩` 43=>a                                                   |
+|`cin  >> b;`                                           | `a1↩`             | `a1↩` 'a' n'est pas un int => plante le flux                    |
+|`cin  >> x;`                                           | `a1↩`             | le flux est planté donc ça va tt droit                          |
 
 **Documentation :** [cin.get](https://cplusplus.com/reference/istream/istream/get) et [cin.ignore](https://cplusplus.com/reference/istream/istream/ignore)
 

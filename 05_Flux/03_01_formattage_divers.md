@@ -24,7 +24,13 @@ void test_formatage(){
     std::cout << std::setfill(':') << std::setw(5) << std::noboolalpha << std::left << (num > 0) << "*\n";
 }
 ~~~
-
+-15::*  
+::-15*  
+-::15*  
+true:*
+false*
+1::::*
+0::::*
 <details>
 <summary>Solution</summary>
 
